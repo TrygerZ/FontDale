@@ -1,16 +1,5 @@
-/* ============================================================
-   FontDale Premium Mall Website - style.css
-   Tema: Rose Gold & Charcoal (Monochromatic Warmth)
-   Dibuat untuk Project HCI - Beginner Friendly CSS
-   ============================================================ */
-
-/* ----- Google Fonts Import ----- */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600;700&display=swap');
 
-
-/* ============================================================
-   1. RESET DASAR
-   ============================================================ */
 * {
     margin: 0;
     padding: 0;
@@ -24,10 +13,6 @@ body {
     line-height: 1.6;
 }
 
-
-/* ============================================================
-   2. HEADER & NAVIGASI
-   ============================================================ */
 header {
     background-color: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(12px);
@@ -98,14 +83,10 @@ nav a.active {
     padding: 6px 14px;
 }
 
-
-/* ============================================================
-   3. BANNER SECTION
-   ============================================================ */
 .banner {
     position: relative;
     text-align: center;
-    padding: 140px 20px 80px 20px; /* Ditambah padding atas agar konten turun melewati fixed header */
+    padding: 140px 20px 80px 20px; 
     margin-bottom: 40px;
     overflow: hidden;
     color: #fff;
@@ -150,10 +131,6 @@ nav a.active {
     margin-bottom: 50px;
 }
 
-
-/* ============================================================
-   4. TOMBOL (Pill Shape - Rose Gold)
-   ============================================================ */
 .btn {
     display: inline-block;
     background-color: #b76e79;
@@ -177,10 +154,6 @@ nav a.active {
     padding: 10px 24px;
 }
 
-
-/* ============================================================
-   5. KARTU (Card) untuk Tenant & Event
-   ============================================================ */
 .card {
     background: #ffffff;
     border-radius: 12px;
@@ -257,10 +230,6 @@ nav a.active {
     padding: 20px 0;
 }
 
-
-/* ============================================================
-   6. SECTION HEADING
-   ============================================================ */
 .section-title {
     font-family: 'Playfair Display', Georgia, serif;
     font-size: 28px;
@@ -269,10 +238,6 @@ nav a.active {
     margin-bottom: 32px;
 }
 
-
-/* ============================================================
-   7. FORM NEWSLETTER
-   ============================================================ */
 .newsletter-form {
     background-color: #ffffff;
     border: 1px solid #f0e6e3;
@@ -311,10 +276,6 @@ nav a.active {
     outline: none;
 }
 
-
-/* ============================================================
-   8. ABOUT PAGE SPECIFIC
-   ============================================================ */
 .about-row {
     display: flex;
     align-items: center;
@@ -357,8 +318,8 @@ nav a.active {
 .about-img {
     width: 100%;
     max-width: 440px;
-    height: 425px; /* Menyamakan tinggi seluruh gambar agar seragam */
-    object-fit: cover; /* Memotong gambar secara proporsional tanpa distorsi */
+    height: 425px; 
+    object-fit: cover; 
     border-radius: 12px;
     border: 1px solid #f0e8e4;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
@@ -366,10 +327,6 @@ nav a.active {
     margin: 0 auto;
 }
 
-
-/* ============================================================
-   9. CONTAINER / LAYOUT UMUM
-   ============================================================ */
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -380,10 +337,6 @@ nav a.active {
     padding: 40px 0;
 }
 
-
-/* ============================================================
-   10. FOOTER (Dark)
-   ============================================================ */
 footer {
     background-color: #1f1f1f;
     color: #cccccc;
@@ -422,13 +375,8 @@ footer a:hover {
     color: #b76e79;
 }
 
-
-/* ============================================================
-   11. MEDIA QUERY RESPONSIVE (max-width: 540px)
-   ============================================================ */
 @media screen and (max-width: 540px) {
 
-    /* ----- 1. Header & Navigasi ----- */
     header {
         padding: 10px 0;
     }
@@ -466,14 +414,13 @@ footer a:hover {
         text-align: center;
     }
 
-    /* ----- 2. Banner Section ----- */
     .banner {
-        padding: 130px 16px 40px 16px; /* Ditambah padding atas agar konten tidak tertutup header mobile */
+        padding: 130px 16px 40px 16px; 
     }
 
     .banner.home-banner {
         min-height: 100vh;
-        padding: 130px 16px 40px 16px; /* Ditambah padding atas agar konten tidak tertutup header mobile */
+        padding: 130px 16px 40px 16px; 
     }
 
     .banner h2 {
@@ -494,7 +441,6 @@ footer a:hover {
         margin: 0 auto;
     }
 
-    /* ----- 3. Cards (directory, events, home) ----- */
     .card-row {
         flex-direction: column;
         align-items: center;
@@ -512,14 +458,12 @@ footer a:hover {
         height: 180px;
     }
 
-    /* ----- 4. Section Titles ----- */
     .section-title {
         font-size: 24px;
         padding: 0 16px;
         text-align: center;
     }
 
-    /* ----- 5. About Section (Mobile Stacking & Clean Order) ----- */
     .about-row {
         display: flex;
         flex-direction: column;
@@ -540,11 +484,11 @@ footer a:hover {
     }
 
     .about-text {
-        order: 1; /* Teks deskripsi selalu berada di atas pada layar HP */
+        order: 1; 
     }
 
     .about-media {
-        order: 2; /* Gambar penjelas selalu berada di bawah pada layar HP */
+        order: 2; 
         margin-bottom: 12px;
     }
 
@@ -559,10 +503,9 @@ footer a:hover {
 
     .about-img {
         max-width: 100%;
-        height: 240px; /* Tinggi proporsional khusus layar HP */
+        height: 240px; 
     }
 
-    /* ----- 6. Newsletter Form ----- */
     .newsletter-form {
         padding: 24px 16px;
         margin-left: 0;
@@ -570,7 +513,6 @@ footer a:hover {
         width: 100%;
     }
 
-    /* ----- 7. Images ----- */
     .banner img,
     .container img {
         max-width: 100%;
@@ -587,7 +529,6 @@ footer a:hover {
         left: 0;
     }
 
-    /* ----- 8. Footer ----- */
     footer {
         padding: 30px 16px;
     }
@@ -597,7 +538,6 @@ footer a:hover {
         margin: 6px 0;
     }
 
-    /* ----- 9. Container Padding ----- */
     .container {
         padding-left: 16px;
         padding-right: 16px;
@@ -607,7 +547,6 @@ footer a:hover {
 
 }
 
-/* ----- Icon styles for SVG icons ----- */
 img.icon {
     display: inline-block;
     width: 16px;
